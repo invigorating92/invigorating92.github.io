@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="clock">00:00:00</h1>
+    <form class="login-form hidden">
+        <input class="lonin-input" type="text" required maxlength="10" placeholder="please input your name">
+        <input class="login-submit" type="submit" value="Log In">
+    </form>
+    <h1 class="hello hidden"></h1>
+    <input class="removeBtn" type="button" value="remove">
+    <form class="todoForm">
+        <input class="todoInput" type="text" placeholder="Enter the plan">   
+    </form>
+    <ul class="todoList"></ul>
+    <ul class="completeList"></ul>
+    <script src="JS/user.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/todo.js"></script>
+</body>
+</html>
