@@ -8,24 +8,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="clock">00:00:00</h1>
-    <form class="login-form hidden">
-        <input class="lonin-input" type="text" required maxlength="10" placeholder="please input your name">
-        <input class="login-submit" type="submit" value="Log In">
-    </form>
-    <h1 class="hello hidden"></h1>
-    <input class="removeBtn" type="button" value="remove">
-    <form class="todoForm">
-        <input class="todoInput" type="text" placeholder="Enter the plan">   
-    </form>
-    <ul class="todoList"></ul>
-    <ul class="completeList"></ul>
+    <header>
+        <h1 class="clock">00:00:00</h1>
+        <form class="login-form hidden">
+            <input class="lonin-input" type="text" required maxlength="10" placeholder="please input your name">
+            <input class="login-submit" type="submit" value="Log In">
+        </form>
+        <div class="helloAndBtn">
+            <h1 class="hello hidden"></h1>
+            <input class="removeBtn hidden" type="button" value="remove">
+        </div>
+        <form class="todoForm">
+            <input class="todoInput" type="text" placeholder="Enter the plan">   
+        </form>
+    </header>
+    <section class="listSection">
+        <ul class="todoList">
+            <div>해야할 일</div>
+        </ul>
+        <ul class="completeList">
+            <div>완료된 일</div>
+        </ul>
+    </section>
+    <input class="calenderBtn" type="button" value="달력보기">
     <div class="imageM"></div>
+    
 
     <script src="JS/user.js"></script>
     <script src="JS/clock.js"></script>
     <script src="JS/todo.js"></script>
-    <script src="JS/weather.js"></script>
+    <!-- <script src="JS/weather.js"></script> -->
     <script src="JS/bgimage.js"></script>
+    <script src="JS/calender.js"></script>
 </body>
 </html>

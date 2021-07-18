@@ -13,6 +13,7 @@ function handleFormSubmit(event){
     localStorage.setItem(USERNAME, username);
     loginForm.classList.add(HIDDEN_CLASSNAME);
     helloText(username);
+    removeBtn.classList.remove(HIDDEN_CLASSNAME);
 }
 function helloText(name){
     hello.classList.remove(HIDDEN_CLASSNAME);
@@ -26,6 +27,7 @@ function roadName(){
         loginForm.classList.remove(HIDDEN_CLASSNAME);
     }else{
         helloText(roadName);
+        removeBtn.classList.remove(HIDDEN_CLASSNAME);
     }
 }
 

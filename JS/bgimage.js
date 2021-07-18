@@ -1,6 +1,7 @@
 let rndImage =[]
+const totalNum = 16;
 
-for(let i=0; i<16; i++){
+for(let i=0; i<totalNum; i++){
     rndImage.push(`${i}.jpg`);
 }
 const chooseImage = rndImage[Math.floor(Math.random()*rndImage.length)];
